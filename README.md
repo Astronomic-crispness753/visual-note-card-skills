@@ -20,6 +20,8 @@ This skill turns any topic, article, or concept into a beautifully structured vi
 
 ### Example Output
 
+![Demo](demo.png)
+
 The card follows a fixed layout structure:
 
 ```
