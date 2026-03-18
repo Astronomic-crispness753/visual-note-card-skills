@@ -1,9 +1,9 @@
 # Visual Note Card Generator
 
-A custom skill for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [OpenClawd](https://github.com/nicekate/OpenClawd) that generates professional Chinese visual note cards (视觉笔记卡片/信息图) as single-page HTML infographics.
+A custom skill for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [OpenClaw](https://openclaw.ai/) that generates professional Chinese visual note cards (视觉笔记卡片/信息图) as single-page HTML infographics.
 
 ![Claude Code Skill](https://img.shields.io/badge/Claude_Code-Skill-blue)
-![OpenClawd Compatible](https://img.shields.io/badge/OpenClawd-Compatible-purple)
+![OpenClaw Compatible](https://img.shields.io/badge/OpenClaw-Compatible-purple)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Overview
@@ -46,7 +46,7 @@ The card follows a fixed layout structure:
 
 ### Prerequisites
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or [OpenClawd](https://github.com/nicekate/OpenClawd) installed and configured
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or [OpenClaw](https://openclaw.ai/) installed and configured
 
 ### Install
 
@@ -58,10 +58,10 @@ Clone this repository into your skills directory:
 git clone https://github.com/beilunyang/visual-note-card-skills.git ~/.claude/skills/visual-note-card
 ```
 
-**OpenClawd:**
+**OpenClaw:**
 
 ```bash
-git clone https://github.com/beilunyang/visual-note-card-skills.git ~/.openclawd/skills/visual-note-card
+git clone https://github.com/beilunyang/visual-note-card-skills.git ~/.openclaw/skills/visual-note-card
 ```
 
 Both tools will automatically detect the skill and use it when you ask for visual notes or knowledge cards.
@@ -74,15 +74,15 @@ Both tools will automatically detect the skill and use it when you ask for visua
 rm -rf ~/.claude/skills/visual-note-card
 ```
 
-**OpenClawd:**
+**OpenClaw:**
 
 ```bash
-rm -rf ~/.openclawd/skills/visual-note-card
+rm -rf ~/.openclaw/skills/visual-note-card
 ```
 
 ## Usage
 
-Simply ask Claude Code or OpenClawd to create a visual note card:
+Simply ask Claude Code or OpenClaw to create a visual note card:
 
 ```
 # Chinese prompts
